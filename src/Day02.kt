@@ -33,8 +33,9 @@ fun main() {
             }
             val repeatCount = num.length()/i
             val sb = StringBuilder()
+            val numSubStr = numAsStr.substring(0, i)
             repeat(repeatCount) {
-                sb.append(numAsStr.substring(0, i))
+                sb.append(numSubStr)
             }
             if(sb.toString() == numAsStr){
                 return true
