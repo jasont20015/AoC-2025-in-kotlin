@@ -63,7 +63,7 @@ fun main() {
     }
 
     val testInput = readInput("Day02_test")
-   // check(part2(testInput) == 4174379265L)
+    check(part2(testInput) == 4174379265L)
 
 
     val input = readInput("Day02")
