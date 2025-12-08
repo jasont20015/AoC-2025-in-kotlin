@@ -32,12 +32,10 @@ fun main() {
                 continue
             }
             val repeatCount = num.length()/i
-            val sb = StringBuilder()
             val numSubStr = numAsStr.substring(0, i)
-            repeat(repeatCount) {
-                sb.append(numSubStr)
-            }
-            if(sb.toString() == numAsStr){
+            val repeatingSeq = numSubStr.repeat(repeatCount)
+
+            if(repeatingSeq == numAsStr){
                 return true
             }
         }
