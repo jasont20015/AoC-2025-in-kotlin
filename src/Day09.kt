@@ -5,17 +5,17 @@ import kotlin.math.abs
 import kotlin.math.max
 
 fun main() {
-    data class pos(val x: Int, val y: Int){
-        fun area(pos2: pos): Long{
+    data class Pos(val x: Int, val y: Int){
+        fun area(pos2: Pos): Long{
             return (abs(pos2.x-this.x) + 1).toLong() * (abs(pos2.y-this.y) + 1).toLong()
         }
     }
 
     fun part1(input: List<String>): Long {
-        val coordinates = mutableListOf<pos>()
+        val coordinates = mutableListOf<Pos>()
         for(line in input){
             val values = line.split(",")
-            val position = pos(values[0].toInt(), values[1].toInt())
+            val position = Pos(values[0].toInt(), values[1].toInt())
             coordinates.add(position)
         }
         var biggestArea = 0L
