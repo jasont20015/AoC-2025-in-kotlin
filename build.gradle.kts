@@ -15,6 +15,8 @@ tasks {
 }
 dependencies {
     implementation(kotlin("stdlib"))
+    // https://mvnrepository.com/artifact/org.locationtech.jts/jts-core
+    implementation("org.locationtech.jts:jts-core:1.20.0")
 }
 repositories {
     mavenCentral()
